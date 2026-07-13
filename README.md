@@ -44,5 +44,12 @@
 ### 1.3. Analyses
 
 ## 2. Citation
+You are free to re-use data and code in this repository. If you do so, please cite the following:
 
-You are free to re-use data and code in this repository. If you do so, please cite: TBA.
+- If you used our scripts or simulation results cite: TBD
+
+- If you used only the raw data in `data/1000G_ONT/HLA_typed` you must cite the original [SpecImmune](https://github.com/deepomicslab/SpecImmune) repository and citation:
+
+  Wang, S., Wang, X., Wang, M., Zhou, Q., Wang, L., & Li, S. C. (2026). A scalable framework for comprehensive typing of polymorphic immune genes from long-read data. Advanced Science (Weinheim, Baden-Wurttemberg, Germany), e21531, e21531.
+
+
