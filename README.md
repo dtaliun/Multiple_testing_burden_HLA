@@ -7,6 +7,8 @@ We are currently reorganizing and refining our code and expect to fully populate
 
 - `scripts/phenotype_simulations` - Python3 scripts to simulate binary and continuous phenotypes from VCF and covariate (optional) files.
 
+- `scripts/reads_extraction` - Python 3 script that extracts reads from short-read BAM/CRAM files that are either mapped to HLA‑relevant contigs or unmapped. It is used to reduce BAM/CRAM file size prior to HLA typing in order to speed up downstream computations, as recommended by major HLA typing tools. The implementation is inspired by similar routines from `SpecHLA` and `Kourami`.
+
 ## 2. Citation
 
 You are free to re-use data and code in this repository. If you do so, please cite: TBA.
