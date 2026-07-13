@@ -13,6 +13,8 @@ We are currently reorganizing and refining our code and expect to fully populate
 
 - `docker` - Definition files in Docker format used to build images for the `HLA-HD` and `SpecHLA` typing tools. These files specify the exact tool versions to ensure reproducibility. Images can be built with either `Docker` or `Apptainer` (we used `Apptainer`).
 
+- `pipelines/typing` - Nextflow pipelines with correspinding configuration files used to run `HLA-HD` and `SpecHLA` typing tools.
+
 ## 2. Citation
 
 You are free to re-use data and code in this repository. If you do so, please cite: TBA.
