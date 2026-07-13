@@ -22,6 +22,11 @@
 
 ### 1.2. Data
 
+- `data/1000G/Covariates` - Covariate files used to simulate phenotypes for individuals with short‑read sequencing data from the 1000 Genomes Project Phase 3. These files include the Sex variable from the 1000 Genomes metadata and the top 10 principal components computed from common LD‑pruned SNVs.
+
+> [!CAUTION]
+> If you want to replicate the phenotypes we simulated, use the following starting random seeds in the `pipelines/gwas_simulation` pipelines. For binary phenotypes: ALL – 20, AFR – 21, AMR – 22, EAS – 23, EUR – 24, SAS – 25. For continuous phenotypes: ALL – 20, AFR – 21, AMR – 25, EAS – 22, EUR – 23, SAS – 24.
+
 ### 1.3. Analyses
 
 ## 2. Citation
