@@ -31,6 +31,9 @@
 
 - `data/1000G_ONT/Covariates` - Covariate files used to simulate phenotypes for individuals with Oxford Nanopore Technologies (ONT) long‑read sequencing data from the 1000 Genomes Project Phase 3. These files include the Sex variable from the 1000 Genomes metadata and the top 10 principal components computed from common LD‑pruned SNVs derived from short‑read sequencing data.
 
+> [!CAUTION]
+> If you want to replicate the phenotypes we simulated for HLA alleles derived from long-read sequencing data, then use the following starting random seeds in the `pipelines/gwas_simulation` pipelines: 2-field - 421, 4-field - 421.
+
 - `data/1000G_ONT/HLA_typed` - 2-field and 4-field HLA alleles in original CSV and converted VCF formats, typed from Oxford Nanopore Technologies (ONT) long-read sequencing data for 1000 Genomes Project Phase 3 using `SpecImmune`. These files were used in our secondary analyses to compare the multiple testing burden between 2-field and 4-field HLA alleles.
 
 > [!IMPORTANT]
