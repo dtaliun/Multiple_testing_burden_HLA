@@ -11,6 +11,8 @@ We are currently reorganizing and refining our code and expect to fully populate
 
 - `scripts/parsing` - Python 3 scripts that parse outputs from `HLA-HD`, `SpecHLA`, and `SpecImmune` and convert them to VCF files for downstream analyses, with built‑in data sanity and quality checks.
 
+- `docker` - Definition files in Docker format used to build images for the `HLA-HD` and `SpecHLA` typing tools. These files specify the exact tool versions to ensure reproducibility. Images can be built with either `Docker` or `Apptainer` (we used `Apptainer`).
+
 ## 2. Citation
 
 You are free to re-use data and code in this repository. If you do so, please cite: TBA.
