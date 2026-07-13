@@ -43,6 +43,8 @@
 
 ### 1.3. Analyses
 
+- `notebooks` - Jupyter Notebook files containing the code used for data analyses and for generating the figures and tables included in the corresponding manuscript.
+
 ## 2. Citation
 You are free to re-use data and code in this repository. If you do so, please cite the following:
 
