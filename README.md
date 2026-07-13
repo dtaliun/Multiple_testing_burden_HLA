@@ -27,6 +27,8 @@
 > [!CAUTION]
 > If you want to replicate the phenotypes we simulated, use the following starting random seeds in the `pipelines/gwas_simulation` pipelines. For binary phenotypes: ALL – 20, AFR – 21, AMR – 22, EAS – 23, EUR – 24, SAS – 25. For continuous phenotypes: ALL – 20, AFR – 21, AMR – 25, EAS – 22, EUR – 23, SAS – 24.
 
+- `data/1000G/HLA_typed` - 2-field HLA alleles in VCF format, typed from high-depth short-read sequencing data in the 1000 Genomes Project Phase 3 using `HLA-HD`. These files were used in our main analyses of 2-field HLA alleles..
+
 ### 1.3. Analyses
 
 ## 2. Citation
