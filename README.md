@@ -14,6 +14,8 @@
 
 - `scripts/parsing` - Python 3 scripts that parse outputs from `HLA-HD`, `SpecHLA`, and `SpecImmune` and convert them to VCF files for downstream analyses, with built‑in data sanity and quality checks.
 
+- `scripts/plink2_permutations` - R and Bash scripts used to obtain an estimate of the effective number of tests by permuting the true phenotype, re-running `PLINK2 --glm` with the same genotypes and covariates, and recording the minimal P-value in each permutation.
+
 - `pipelines/typing` - Nextflow pipelines with correspinding configuration files used to run `HLA-HD` and `SpecHLA` typing tools.
 
 - `pipelines/gwas_simulation` - Nextflow pipelines and configuration files used to run HLA association analyses on simulated phenotypes (30,000 simulations in our case).
