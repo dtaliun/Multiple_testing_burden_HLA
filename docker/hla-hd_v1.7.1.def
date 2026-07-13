@@ -1,0 +1,30 @@
+Bootstrap: docker
+From: broadinstitute/gatk:4.6.2.0
+
+%files
+	# Download HLA-HD source code into the same directory from where you will build container.
+	# This line will copy the HLD-HD source files from host machine to the container.
+	hlahd.1.7.1.tar.gz /opt/hlahd.1.7.1.tar.gz
+
+%post
+	cd opt
+
+	# Download pre-compiled Bowtie2
+	wget https://github.com/BenLangmead/bowtie2/releases/download/v2.5.5/bowtie2-2.5.5-linux-x86_64.zip
+	unzip -o bowtie2-2.5.5-linux-x86_64.zip 
+	mv bowtie2-2.5.5-linux-x86_64 bowtie2
+	rm bowtie2-2.5.5-linux-x86_64.zip
+	export PATH="/opt/bowtie2:$PATH"
+
+	# Setup HLA-HD
+	tar -xzvf hlahd.1.7.1.tar.gz
+	mv hlahd.1.7.1 hlahd
+	rm hlahd.1.7.1.tar.gz
+	cd hlahd
+	sh install.sh
+	sh update.dictionary.sh
+
+%environment
+	export PATH="/opt/bowtie2:$PATH"
+	export PATH="/opt/hlahd/bin:$PATH"
+

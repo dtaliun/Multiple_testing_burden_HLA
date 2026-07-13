@@ -1,0 +1,51 @@
+Bootstrap: docker
+From: mambaorg/micromamba:1.5.10-noble
+
+%post
+	apt-get update
+	apt-get install -y build-essential autoconf libz-dev libbz2-1.0 libbz2-dev liblzma5 liblzma-dev git wget unzip
+	
+	cd opt
+
+	# Install HTSlib
+	git clone https://github.com/samtools/htslib.git
+	cd htslib
+	git submodule update --init --recursive
+	autoreconf -i
+	./configure
+	make
+	make install	
+	cd /opt	
+	
+	# Download bowtie2
+	wget https://github.com/BenLangmead/bowtie2/releases/download/v2.5.5/bowtie2-2.5.5-linux-x86_64.zip
+	unzip -o bowtie2-2.5.5-linux-x86_64.zip 
+	mv bowtie2-2.5.5-linux-x86_64 bowtie2
+	rm bowtie2-2.5.5-linux-x86_64.zip
+	export PATH="/opt/bowtie2:$PATH"
+
+	# Setup  SpecHLA
+	wget https://github.com/deepomicslab/SpecHLA/archive/refs/tags/v1.0.12.zip
+	unzip -o v1.0.12.zip
+	mv SpecHLA-1.0.12 SpecHLA
+	rm v1.0.12.zip
+	cd /opt/SpecHLA
+
+    	micromamba env create --prefix /opt/spechla_env -f environment.yml
+	micromamba install -p /opt/spechla_env -c conda-forge libstdcxx-ng=13
+	micromamba clean --all --yes
+
+	chmod +x -R bin/*
+	
+	export PATH="/opt/spechla_env/bin:/opt/SpecHLA/bin:/opt/bowtie2:$PATH"
+    	unset LD_LIBRARY_PATH
+	unset LIBRARY_PATH
+	bash index.sh
+
+	cd /opt/SpecHLA/bin
+	perl renew_HLA_annotation_db.pl
+	
+%environment
+	export PATH="/opt/SpecHLA/bin:/opt/SpecHLA/script:/opt/SpecHLA/script/whole:/opt/bowtie2:/opt/spechla_env/bin:$PATH"
+    	#export SPECHLA_HOME="/opt/SpecHLA"
+    	
