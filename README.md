@@ -22,6 +22,8 @@
 
 ### 1.2. Data
 
+- `data/1000G/Covariates` - Covariate files used to simulate phenotypes for individuals with short‑read sequencing data from the 1000 Genomes Project Phase 3. These files include the Sex variable from the 1000 Genomes metadata and the top 10 principal components computed from common LD‑pruned SNVs.
+
 ### 1.3. Analyses
 
 ## 2. Citation
