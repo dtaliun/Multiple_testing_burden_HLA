@@ -31,6 +31,13 @@
 
 - `data/1000G_ONT/Covariates` - Covariate files used to simulate phenotypes for individuals with Oxford Nanopore Technologies (ONT) long‑read sequencing data from the 1000 Genomes Project Phase 3. These files include the Sex variable from the 1000 Genomes metadata and the top 10 principal components computed from common LD‑pruned SNVs derived from short‑read sequencing data.
 
+- `data/1000G_ONT/HLA_typed` - 2-field and 4-field HLA alleles in original CSV and converted VCF formats, typed from Oxford Nanopore Technologies (ONT) long-read sequencing data for 1000 Genomes Project Phase 3 using `SpecImmune`. These files were used in our secondary analyses to compare the multiple testing burden between 2-field and 4-field HLA alleles.
+
+> [!IMPORTANT]
+> The HLA typing of long‑read sequencing data was performed by Wang et al. (2026) and shared in the official `SpecImmune` GitHub repository [https://github.com/deepomicslab/SpecImmune](https://github.com/deepomicslab/SpecImmune). We gratefully acknowledge the work of Wang et al. (2026), which sped up our analyses. If you use these data, please be sure to cite the following:
+>
+> Wang, S., Wang, X., Wang, M., Zhou, Q., Wang, L., & Li, S. C. (2026). A scalable framework for comprehensive typing of polymorphic immune genes from long-read data. Advanced Science (Weinheim, Baden-Wurttemberg, Germany), e21531, e21531.
+
 ### 1.3. Analyses
 
 ## 2. Citation
