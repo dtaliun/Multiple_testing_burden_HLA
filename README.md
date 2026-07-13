@@ -15,6 +15,8 @@ We are currently reorganizing and refining our code and expect to fully populate
 
 - `pipelines/typing` - Nextflow pipelines with correspinding configuration files used to run `HLA-HD` and `SpecHLA` typing tools.
 
+- `pipelines/gwas_simulation` - Nextflow pipelines and configuration files used to run HLA association analyses on simulated phenotypes (30,000 simulations in our case).
+
 ## 2. Citation
 
 You are free to re-use data and code in this repository. If you do so, please cite: TBA.
