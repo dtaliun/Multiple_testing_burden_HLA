@@ -47,6 +47,10 @@
 
 - `data/1000G_ONT/Simulated_continuous_phenotypes` - simulated continuous phenotypes used to perform association tests with 2-field and 4-field HLA alleles derived from long-read sequencing data.
 
+- `data/1000G/GWAS_continous` and `data/1000G/GWAS_binary` - summary statistics (including allele counts and p-values) from all association tests between simulated phenotypes and 2-field HLA alleles derived from short-read sequencing data.
+
+- `data/1000G_ONT/GWAS_continous` and `data/1000G/GWAS_binary` - summary statistics (including allele counts and p-values) from all association tests between simulated phenotypes and 2-field and 4-field HLA alleles derived from long-read sequencing data.
+
 ### 1.3. Analyses
 
 - `notebooks` - Jupyter Notebook files containing the code used for data analyses and for generating the figures and tables included in the corresponding manuscript.
