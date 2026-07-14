@@ -43,6 +43,10 @@
 >
 > Wang, S., Wang, X., Wang, M., Zhou, Q., Wang, L., & Li, S. C. (2026). A scalable framework for comprehensive typing of polymorphic immune genes from long-read data. Advanced Science (Weinheim, Baden-Wurttemberg, Germany), e21531, e21531.
 
+- `data/1000G/Simulated_*_phenotypes` - simulated continuous and binary phenotypes used to perform association tests with 2-field HLA alleles derived from short-read sequencing data.
+
+- `data/1000G_ONT/Simulated_continuous_phenotypes` - simulated continuous phenotypes used to perform association tests with 2-field and 4-field HLA alleles derived from long-read sequencing data.
+
 ### 1.3. Analyses
 
 - `notebooks` - Jupyter Notebook files containing the code used for data analyses and for generating the figures and tables included in the corresponding manuscript.
