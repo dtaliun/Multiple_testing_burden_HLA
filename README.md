@@ -1,6 +1,4 @@
 # Evaluating multiple testing burden in HLA association studies
-***
-
 
 ## 1. Contents
 
