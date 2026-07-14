@@ -8,4 +8,4 @@ To download it, use:
 curl -L -o 1K_ONT_GWAS_continuous.tar.gz https://zenodo.org/records/21346266/files/1K_ONT_GWAS_continuous.tar.gz?download=1
 ```
 
-Then, unpack the arhcive.
+Then, unpack the archive.
