@@ -56,7 +56,9 @@
 ## 2. Citation
 You are free to re-use data and code in this repository. If you do so, please cite the following:
 
-- If you used our scripts or simulation results cite: TBD
+- If you used our scripts or simulation results cite:
+
+  Taliun, D., & Gagliano Taliun, S. A. (2026). Empirical estimation of multiple-testing burden for population-based HLA association studies using sequencing-derived HLA alleles across genetic ancestries. bioRxiv. [doi:10.64898/2026.07.12.738059](https://doi.org/10.64898/2026.07.12.738059)
 
 - If you used only the raw data in `data/1000G_ONT/HLA_typed` you must cite the original [SpecImmune](https://github.com/deepomicslab/SpecImmune) repository and citation:
 
